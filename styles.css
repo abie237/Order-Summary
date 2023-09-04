@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: hsl(225, 100%, 94%); */
+    background-image: url('images/pattern-background-desktop.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    max-width: 290px;
+    width: 100%;
+    max-height: 430px;
+    height: 100%;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px hsla(245, 22%, 24%, 0.209);
+} 
+ .container .svg-container{
+    height: 30%;
+    width: 100%;
+}
+.svg-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container svg{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+.content{
+    height: 70%;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+.content-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content .small{
+   font-size: 13px;
+   color: gray;
+}
+.content .plan{
+    background-color: hsla(224, 23%, 55%, 0.073);
+    border-radius: 5px;
+    padding: 5px 15px;
+    width: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plan .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left img{
+    width: 35px;
+    margin-right: 12px;
+}
+button{
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 12px 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 0 10px 25px hsla(245, 75%, 52%, 0.278);
+    transition: 0.2s ease-in;
+}
+button:hover{
+    background-color:hsl(245, 82%, 62%) ;
+}
+#yr{
+    font-weight: bold;
+    font-size: 13px;
+}
+.left span{
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+.right a{
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(245, 54%, 54%)
+}
+.right a:hover{
+    color: hsl(245, 94%, 46%);
+}
+.cancel{
+    margin-top: 5px;
+    color: gray;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.cancel:hover{
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 475px) {
+    body{
+        background-image: url('images/pattern-background-mobile.svg');
+        background-position: center;
+        background-size: cover;
+    }
+}
